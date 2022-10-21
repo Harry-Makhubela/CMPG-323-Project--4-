@@ -94,6 +94,17 @@
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="552,366" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="CurrentDataTable" />
+      <Variable x:TypeArguments="x:String" Name="Url" />
+      <Variable x:TypeArguments="sd:DataColumnCollection" Name="CurrentColumnListi" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="strEdit">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> -- EDITED</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
